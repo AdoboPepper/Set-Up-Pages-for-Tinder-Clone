@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:navpractice/main.dart';
 import 'package:navpractice/pages/log_in.dart';
 import 'package:navpractice/pages/name.dart';
 
@@ -9,6 +8,8 @@ class pageA extends StatefulWidget {
   @override
   State<pageA> createState() => _pageAState();
 }
+
+
 
 class _pageAState extends State<pageA> {
   @override

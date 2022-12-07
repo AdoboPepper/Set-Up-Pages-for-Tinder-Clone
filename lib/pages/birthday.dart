@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:navpractice/pages/welcome_to_tinder.dart';
-import 'package:navpractice/pages/birthday.dart';
+import 'package:navpractice/pages/gender.dart';
 
-class FirstName extends StatefulWidget {
-  const FirstName({Key? key}) : super(key: key);
+class Birthday extends StatefulWidget {
+  const Birthday({Key? key}) : super(key: key);
 
   @override
-  State<FirstName> createState() => _FirstNameState();
+  State<Birthday> createState() => _BirthdayState();
 }
 
-class _FirstNameState extends State<FirstName> {
+class _BirthdayState extends State<Birthday> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +36,7 @@ class _FirstNameState extends State<FirstName> {
             const Padding(
               padding: EdgeInsets.only(left: 50, right: 100),
               child: Text(
-                "My first name is ",
+                "My birthday is ",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 50,
@@ -48,7 +48,7 @@ class _FirstNameState extends State<FirstName> {
               padding: EdgeInsets.symmetric(horizontal: 50),
               child: TextField(
                 decoration: InputDecoration(
-                  hintText: 'First Name',
+                  hintText: '           D D / M M / Y Y Y Y',
                   hintStyle: TextStyle(fontSize: 20),
                 ),
               ),
@@ -56,7 +56,7 @@ class _FirstNameState extends State<FirstName> {
             SizedBox(height: 10),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 50),
-              child: Text("This is how it will appear in Tinder and you will not be able to change it",
+              child: Text("Your age will be public",
                 style: TextStyle( fontSize: 15, color: Colors.black54),),
             ),
             SizedBox(height: 100),
@@ -65,7 +65,7 @@ class _FirstNameState extends State<FirstName> {
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Birthday()));
+                      MaterialPageRoute(builder: (context) => const Gender()));
                 },
                 child: Container(
 
